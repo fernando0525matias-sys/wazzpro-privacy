@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WazzPro Sender — Política de Privacidad</title>
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --card: #ffffff;
+      --ink: #1c1b18;
+      --muted: #5c574e;
+      --line: #e4dfd4;
+      --accent: #1f6b4a;
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.55;
+    }
+    header {
+      background: var(--card);
+      border-bottom: 1px solid var(--line);
+      padding: 1.5rem 1.25rem 1.25rem;
+    }
+    main {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 1.25rem 1.25rem 3rem;
+    }
+    h1 {
+      font-size: 1.55rem;
+      line-height: 1.25;
+      margin: 0 0 0.5rem;
+    }
+    h2 {
+      font-size: 1.15rem;
+      margin: 2rem 0 0.75rem;
+    }
+    p, li { font-size: 1rem; }
+    .meta, .muted { color: var(--muted); font-size: 0.95rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1rem 1.1rem;
+      margin: 1rem 0;
+    }
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    table {
+      width: 100%;
+      min-width: 28rem;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      background: var(--card);
+    }
+    th, td {
+      border: 1px solid var(--line);
+      text-align: left;
+      padding: 0.55rem 0.5rem;
+      vertical-align: top;
+    }
+    th { background: #f0ece3; }
+    .notice {
+      border-left: 4px solid var(--accent);
+      padding-left: 0.85rem;
+    }
+    footer {
+      max-width: 42rem;
+      margin: 0 auto;
+      padding: 0 1.25rem 2.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    a { color: var(--accent); }
+    @media (min-width: 720px) {
+      header, main, footer { padding-left: 0; padding-right: 0; }
+      header { padding: 2rem 0 1.5rem; }
+      header .wrap, main, footer { max-width: 42rem; margin-left: auto; margin-right: auto; }
+      header .wrap { padding: 0 1.25rem; }
+      h1 { font-size: 1.85rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <p class="meta">Wazz Pro · aplicación SMS para Android</p>
+      <h1>WazzPro Sender — Política de Privacidad</h1>
+      <p class="muted">Titular: Fernando Jose / Wazz Pro<br>
+      Correo de privacidad: <a href="mailto:fernando0525matias@gmail.com">fernando0525matias@gmail.com</a><br>
+      Correo de soporte: <a href="mailto:fernando0525matias@gmail.com">fernando0525matias@gmail.com</a></p>
+    </div>
+  </header>
+  <main>
+    <div class="card notice">
+      <p>Esta página describe el comportamiento actual de WazzPro Sender, paquete <code>com.wazzpro.sms</code>, versión 1.3.0. No afirma aprobación de Google Play. No sustituye asesoría legal.</p>
+    </div>
+
+    <h2>1. Introducción</h2>
+    <p>WazzPro Sender es una aplicación de mensajería SMS para Android. Permite consultar conversaciones, redactar, enviar y recibir SMS en el dispositivo. Puede configurarse como aplicación SMS predeterminada. De forma opcional, incluye herramientas para preparar mensajes personalizados a partir de una lista que el usuario importa (archivo Excel) y para seguir el resultado de esos envíos.</p>
+    <p>WazzPro no tiene un servidor propio para procesar campañas, Excel, variables, conversaciones ni resultados. Esos datos se procesan localmente en el dispositivo.</p>
+    <p>Cuando usted envía un SMS, el mensaje sí sale del teléfono por la red del operador móvil de la SIM utilizada. Eso es el funcionamiento inherente del SMS, no un envío a un servidor de WazzPro. Esta política no afirma que los SMS nunca salgan del dispositivo.</p>
+
+    <h2>2. Responsable</h2>
+    <p>Titular: Fernando Jose / Wazz Pro<br>
+    Correo de privacidad: <a href="mailto:fernando0525matias@gmail.com">fernando0525matias@gmail.com</a><br>
+    Correo de soporte: <a href="mailto:fernando0525matias@gmail.com">fernando0525matias@gmail.com</a></p>
+    <p>No se publica dirección física, teléfono, RUC, empresa constituida, representante legal adicional ni domicilio fiscal, porque esos datos no fueron proporcionados.</p>
+
+    <h2>3. Datos que procesa WazzPro</h2>
+    <p>WazzPro procesa datos que usted introduce, que importa, o que llegan como SMS/MMS al dispositivo. No lee la agenda de contactos de Android.</p>
+    <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Dato</th><th>¿Se procesa hoy?</th><th>Origen</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Número telefónico</td><td>Sí</td><td>Lista Excel, composer, SMS recibido, respuesta</td></tr>
+        <tr><td>Nombre u otra etiqueta</td><td>Sí, si existe</td><td>Columna Excel / texto que usted escriba</td></tr>
+        <tr><td>Variables de Excel</td><td>Sí, si importa un archivo</td><td>Celdas del .XLSX; procesamiento local</td></tr>
+        <tr><td>Saldo, mora, DNI u otros campos</td><td>Solo si usted los incluye</td><td>No hay un módulo fijo de cobranza o DNI</td></tr>
+        <tr><td>Cuerpo del SMS</td><td>Sí</td><td>Plantilla, composer, SMS recibido</td></tr>
+        <tr><td>Estados SENT / DELIVERED / UNKNOWN</td><td>Sí</td><td>Máquina de estados y callbacks de Android</td></tr>
+        <tr><td>Fechas</td><td>Sí</td><td>Reloj del dispositivo / SMS recibido</td></tr>
+        <tr><td>Identificadores internos</td><td>Sí</td><td>campaignId / messageId locales</td></tr>
+        <tr><td>subscriptionId de SIM</td><td>Sí, si se usa o elige SIM</td><td>SubscriptionManager</td></tr>
+        <tr><td>Conversaciones</td><td>Sí</td><td>Inbox local (Room)</td></tr>
+        <tr><td>MMS</td><td>Parcial / placeholder</td><td>Aviso de texto, no multimedia</td></tr>
+        <tr><td>CSV de resultados</td><td>Sí, si pulsa Exportar</td><td>Generado localmente en caché</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p>WazzPro no procesa, en el código actual: ubicación, Advertising ID, cuenta de usuario WazzPro, correo de cuenta, contactos de la agenda, fotos o vídeo reales de MMS, ni identificadores de anuncios.</p>
+
+    <h2>4. Cómo utiliza los datos</h2>
+    <p>Los datos se usan únicamente para las funciones de la aplicación: conversaciones SMS; redactar, enviar y recibir; personalizar un mensaje con variables de una lista importada (en el dispositivo); mostrar resultados; notificaciones locales; recuperación de una campaña interrumpida según usted decida; y generar un CSV si lo solicita.</p>
+    <ul>
+      <li><strong>Pendiente:</strong> el mensaje aún no se envió o está en cola.</li>
+      <li><strong>Enviado:</strong> Android aceptó el envío (SENT). No significa que el destinatario lo haya recibido.</li>
+      <li><strong>Entregado:</strong> solo si existe una confirmación real de entrega (DELIVERED). WazzPro no afirma entrega al destinatario cuando solamente existe SENT.</li>
+      <li><strong>Fallido:</strong> el envío no se completó.</li>
+      <li><strong>Sin confirmar:</strong> el estado no está confirmado (UNKNOWN). No se presenta como entrega.</li>
+    </ul>
+    <p>No está integrado AdMob. No hay Firebase, analytics de producto ni SDK publicitario en esta versión.</p>
+
+    <h2>5. SMS y mensajes</h2>
+    <p>WazzPro puede actuar como aplicación SMS predeterminada (ROLE_SMS). Usted lo confirma en el selector de Android; la app no se autoasigna el rol al abrir.</p>
+    <p>Los SMS enviados salen mediante el operador móvil del usuario, a través de Android SmsManager. La recepción usa SMS_DELIVER (no se declara RECEIVE_SMS) y se guarda en Room. El inbox lee Room; no consulta content://sms para armar la bandeja.</p>
+
+    <h2>6. Campañas y Excel</h2>
+    <p>De forma opcional puede importar una lista propia en Excel (.XLSX). El archivo se lee en memoria en este dispositivo; las celdas se copian a la base local; las variables se sustituyen localmente; usted previsualiza y, si lo decide, inicia el envío.</p>
+    <p>WazzPro no tiene servidor propio para procesar las campañas. Las campañas son herramientas adicionales para trabajar con listas propias.</p>
+
+    <h2>7. Almacenamiento local (Room)</h2>
+    <p>La base Room (<code>sms-manager.db</code>) actualmente <strong>no está cifrada</strong>. También hay preferencias locales y, si exporta, un CSV temporal en la caché. No se afirma cifrado en reposo.</p>
+
+    <h2>8. Transmisión al operador</h2>
+    <p>No existe backend propio ni sincronización en la nube de WazzPro. No hay permiso de producto INTERNET. Cuando envía un SMS, el número y el cuerpo salen del dispositivo hacia la red del operador. Si el operador no confirma entrega, el estado permanece Enviado (SENT), no Entregado.</p>
+
+    <h2>9. CSV</h2>
+    <p>El CSV se genera localmente cuando el usuario lo solicita. No se comparte automáticamente. Usted decide si lo comparte o exporta mediante el selector de Android.</p>
+    <p>Campos: ID de campaña, ID de mensaje, teléfono, nombre, transporte, estado, fechas de creación/envío/entrega, intentos, código y texto de error. El CSV no incluye el cuerpo del SMS, el Excel, DNI, saldo, días de mora ni el mapa completo de variables.</p>
+
+    <h2>10. MMS</h2>
+    <p>El soporte MMS es parcial / placeholder. Puede registrarse el aviso «Mensaje multimedia (MMS)». No interpreta el PDU, no muestra imágenes ni adjuntos y no envía MMS. No debe describirse como funcionalidad completa.</p>
+
+    <h2>11. Permisos</h2>
+    <p>SEND_SMS, READ_SMS, RECEIVE_MMS, RECEIVE_WAP_PUSH, READ_PHONE_STATE, POST_NOTIFICATIONS, servicios en primer plano / WAKE_LOCK y RECEIVE_BOOT_COMPLETED, con los usos descritos en el manifiesto de producto. RECEIVE_SMS no está declarado. INTERNET no está declarado. READ_CONTACTS no está declarado.</p>
+
+    <h2>12. Servicios de terceros</h2>
+    <p>En la versión actual no hay Firebase, AdMob, analytics, crash reporting de producto, trackers, WebView de producto ni backend de WazzPro.</p>
+
+    <h2>13. Publicidad</h2>
+    <p>WazzPro no muestra anuncios. No está integrado AdMob. No se usa Advertising ID.</p>
+
+    <h2>14. Conservación</h2>
+    <p>No existe un borrado automático por tiempo. Puede borrar una campaña, una plantilla, o desinstalar / borrar los datos de la aplicación. No hay borrado de hilo de conversación en la interfaz ni portal remoto de borrado.</p>
+
+    <h2>15. Seguridad</h2>
+    <p>Los datos viven en el dispositivo, sin backend WazzPro. Room no está cifrada. allowBackup está desactivado. No se afirma seguridad absoluta del teléfono.</p>
+
+    <h2>16. Copias de seguridad</h2>
+    <p>WazzPro intenta no incluir la base, las preferencias ni los cuerpos SMS en la copia de seguridad en la nube de Google configurada por las reglas de la app. Eso no es una protección absoluta frente a un dispositivo desbloqueado, ADB o capturas.</p>
+
+    <h2>17. Derechos</h2>
+    <p>Puede ver conversaciones, campañas, resultados, plantillas y ajustes en el dispositivo. Para consultas: <a href="mailto:fernando0525matias@gmail.com">fernando0525matias@gmail.com</a>. WazzPro no puede borrar un SMS ya entregado en otro teléfono ni un archivo que usted haya compartido fuera de la app.</p>
+
+    <h2>18. Menores</h2>
+    <p>WazzPro no está diseñada como aplicación infantil. La declaración de Play sobre si la app está dirigida a niños la decide el titular y no se inventa aquí.</p>
+
+    <h2>19. Cambios</h2>
+    <p>Si cambia el tratamiento (por ejemplo AdMob, internet, servidores o nuevos permisos), esta política se actualizará antes de publicar esa versión.</p>
+
+    <h2>20. Contacto</h2>
+    <p>Fernando Jose / Wazz Pro<br>
+    <a href="mailto:fernando0525matias@gmail.com">fernando0525matias@gmail.com</a></p>
+
+    <h2>21. Fecha de este documento</h2>
+    <p>14 de septiembre de 2026 (fecha de este texto, alineada con la versión 1.3.0 de WazzPro Sender).</p>
+  </main>
+  <footer>
+    <p>Página estática. Sin cookies, sin analítica, sin rastreadores, sin JavaScript y sin fuentes externas obligatorias.</p>
+  </footer>
+</body>
+</html>
