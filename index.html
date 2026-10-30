@@ -98,7 +98,7 @@
   </header>
   <main>
     <div class="card notice">
-      <p><strong>Última actualización: 6 de octubre de 2026.</strong> Esta política describe WazzPro Sender, paquete <code>com.wazzpro.sms</code>, incluida la edición de Google Play con publicidad AdMob. Las versiones anteriores sin publicidad y la edición Enterprise no incorporan ese servicio.</p>
+      <p><strong>Última actualización: 30 de octubre de 2026.</strong> Esta política describe WazzPro Sender, paquete <code>com.wazzpro.sms</code>, incluida la edición de Google Play con publicidad AdMob. Las versiones anteriores sin publicidad y la edición Enterprise no incorporan ese servicio.</p>
     </div>
 
     <h2>1. Introducción</h2>
@@ -150,7 +150,7 @@
 
     <h2>5. SMS y mensajes</h2>
     <p>WazzPro puede actuar como aplicación SMS predeterminada (ROLE_SMS). Usted lo confirma en el selector de Android; la app no se autoasigna el rol al abrir.</p>
-    <p>Los SMS enviados salen mediante el operador móvil del usuario, a través de Android SmsManager. La recepción usa SMS_DELIVER (no se declara RECEIVE_SMS) y se guarda en Room. El inbox lee Room; no consulta content://sms para armar la bandeja.</p>
+    <p>Los SMS enviados salen mediante el operador móvil del usuario, a través de Android SmsManager. La recepción usa SMS_DELIVER, que Android solo entrega a la aplicación SMS predeterminada y que requiere RECEIVE_SMS; el mensaje se guarda en el proveedor de SMS de Android y en Room. La bandeja Conversaciones lee, en el propio dispositivo, el historial de SMS del proveedor de Android (content://sms, permiso READ_SMS) para mostrar las conversaciones que ya existen en el teléfono, y lo combina con los registros de Room. Ese historial no se copia a ningún servidor ni se comparte con terceros, tampoco con el SDK publicitario.</p>
 
     <h2>6. Campañas y Excel</h2>
     <p>De forma opcional puede importar una lista propia en Excel (.XLSX). El archivo se lee en memoria en este dispositivo; las celdas se copian a la base local; las variables se sustituyen localmente; usted previsualiza y, si lo decide, inicia el envío.</p>
@@ -170,7 +170,7 @@
     <p>El soporte MMS es parcial / placeholder. Puede registrarse el aviso «Mensaje multimedia (MMS)». No interpreta el PDU, no muestra imágenes ni adjuntos y no envía MMS. No debe describirse como funcionalidad completa.</p>
 
     <h2>11. Permisos</h2>
-    <p>Los permisos de mensajería y funcionamiento incluyen SEND_SMS, READ_SMS, RECEIVE_MMS, RECEIVE_WAP_PUSH, READ_PHONE_STATE, POST_NOTIFICATIONS, servicios en primer plano, WAKE_LOCK y RECEIVE_BOOT_COMPLETED. Permiten las funciones SMS, selección de SIM, notificaciones y recuperación de envíos. READ_CONTACTS y RECEIVE_SMS no están declarados.</p>
+    <p>Los permisos de mensajería y funcionamiento incluyen SEND_SMS, READ_SMS, RECEIVE_SMS, RECEIVE_MMS, RECEIVE_WAP_PUSH, READ_PHONE_STATE, POST_NOTIFICATIONS, servicios en primer plano, WAKE_LOCK y RECEIVE_BOOT_COMPLETED. Permiten las funciones SMS, selección de SIM, notificaciones y recuperación de envíos. READ_CONTACTS no está declarado.</p>
     <p>La edición con publicidad también utiliza INTERNET y ACCESS_NETWORK_STATE. El SDK publicitario incorpora permisos de identificadores publicitarios, incluidos AD_ID y ACCESS_ADSERVICES_AD_ID. Su disponibilidad depende de Android y de la configuración de privacidad del dispositivo. Estos permisos no autorizan usar el contenido de sus mensajes para publicidad.</p>
 
     <h2>12. Servicios de terceros</h2>
